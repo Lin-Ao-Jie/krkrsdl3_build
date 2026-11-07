@@ -45,7 +45,7 @@ jobs:
 
       - name: Install vcpkg
         run: |
-          git clone --depth 1 https://github.com/microsoft/vcpkg.git "$VCPKG_ROOT"
+          git clone https://github.com/microsoft/vcpkg.git "$VCPKG_ROOT"
           "$VCPKG_ROOT/bootstrap-vcpkg.sh" -disableMetrics
 
       - name: Build ARM64 APK
